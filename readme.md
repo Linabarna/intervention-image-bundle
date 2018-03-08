@@ -17,7 +17,7 @@ And one of the following image libraries.
 * Imagick PHP extension (>=6.5.7)
 
 ## Install
-    composer require impulze/intervention-image-bundle
+    composer require impulze/intervention-image-bundle:dev-master
 
 ## Usage
 ### Bundle
