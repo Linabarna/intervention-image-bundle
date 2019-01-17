@@ -12,17 +12,14 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
+        $treeBuilder = new TreeBuilder('intervention_image');
 
-        $root = $treeBuilder
-            ->root('intervention_image')
+        return $treeBuilder->getRootNode()
             ->children()
                 ->enumNode('driver')
                     ->values(['gd', 'imagick'])
                     ->defaultValue('gd')
                 ->end()
             ->end();
-
-        return $treeBuilder;
     }
 }
