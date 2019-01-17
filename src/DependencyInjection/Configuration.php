@@ -14,12 +14,14 @@ class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder('intervention_image');
 
-        return $treeBuilder->getRootNode()
+        $treeBuilder->getRootNode()
             ->children()
                 ->enumNode('driver')
                     ->values(['gd', 'imagick'])
                     ->defaultValue('gd')
                 ->end()
             ->end();
+
+        return $treeBuilder;
     }
 }
