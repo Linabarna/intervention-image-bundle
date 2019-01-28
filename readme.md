@@ -3,7 +3,7 @@ A very simple Symfony Bundle that wraps around the [Intervention Image](http://i
 
 ## Requirements
 ### Bundle
-Bundle is set at Symfony 3.4 but I have not tested this as this bundle was created for personal use I have only used it in flex projects (4+), however from what I can tell the latest required feature it uses is autowiring so I moved it down.
+Symfony 3.4
 
 ### Intervention Image
 Quoted from [Intervention Image](http://image.intervention.io/getting_started/installation):
