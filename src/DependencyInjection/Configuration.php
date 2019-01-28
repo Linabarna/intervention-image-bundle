@@ -14,8 +14,13 @@ class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder('intervention_image');
 
-        $treeBuilder->getRootNode()
-            ->children()
+        if (method_exists($treeBuilder, 'getRootNode')) {
+            $rootNode = $treeBuilder->getRootNode();
+        } else {
+            $rootNode = $treeBuilder->root('intervention_image');
+        }
+
+        $rootNode->children()
                 ->enumNode('driver')
                     ->values(['gd', 'imagick'])
                     ->defaultValue('gd')
