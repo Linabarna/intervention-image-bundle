@@ -1,5 +1,5 @@
 {
-	"name": "idihyaabde/intervention-image-bundle",
+	"name": "linabarna/intervention-image-bundle",
 	"description": "Basic symfony service wrapper for Intervention Image",
 	"type": "symfony-bundle",
 	"homepage": "https://github.com/jennevdmeer/intervention-image-bundle",
